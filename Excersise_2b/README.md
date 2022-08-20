@@ -2,7 +2,7 @@
 
 The new technique allows data frames to contain an arbitrary number of bits and allows character codes with an arbitrary no of bits per character. Each frame begins and ends with the special bit pattern, 01111110, called a flag byte. Whenever the sender's data link layer encounters five consecutive ones in the data, it automatically stuffs a 0 bit into the outgoing bit stream.
 
-https://media.geeksforgeeks.org/wp-content/uploads/Bit_Byte_Stuffing_2.jpg
+![Bit_Byte_Stuffing_1](https://media.geeksforgeeks.org/wp-content/uploads/Bit_Byte_Stuffing_2.jpg)
 
 INPUT FORMAT:
 
