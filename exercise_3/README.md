@@ -35,10 +35,15 @@ Receiver Site :
  
 
 10101001        subunit 1  
-00111001        subunit 2     
+
+00111001        subunit 2    
+
 00011101        checksum 
+
 11111111        sum
+
 00000000        sum's complement
+
 
 Result is zero, it means no error.
 
