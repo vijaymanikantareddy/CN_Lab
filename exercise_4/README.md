@@ -31,7 +31,7 @@ At the receiver’s end with the help of even parity (generally), the erroneous 
 Respective index parity is calculated for r1, r2, r3, r4 and so on.
 
 
-(https://www.thecrazyprogrammer.com/wp-content/uploads/2017/03/Hamming-Code-in-C-and-C.jpg?ezimgfmt=rs:638x479/rscb1/ng:webp/ngcb1)
+![](https://www.thecrazyprogrammer.com/wp-content/uploads/2017/03/Hamming-Code-in-C-and-C.jpg?ezimgfmt=rs:638x479/rscb1/ng:webp/ngcb1)
 
 INPUT FORMAT:
 
