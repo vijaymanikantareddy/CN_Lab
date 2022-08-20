@@ -7,11 +7,15 @@ The new technique allows data frames to contain an arbitrary number of bits and 
 INPUT FORMAT:
 
 The first line contains the frame size
-The second line has the frame in the form of 0 or 1.        
+
+The second line has the frame in the form of 0 or 1. 
+
 OUTPUT FORMAT:
+
 Contains a frame after bit stuffing.
 
 SAMPLE INPUT:
+
 5
 
 1 1 1 1 1
