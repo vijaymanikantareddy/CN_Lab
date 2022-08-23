@@ -1,42 +1,39 @@
 #include<bits/stdc++.h>
 using namespace std;
+int find(int a, int b, int c, int d){
+	return (a*8)+(b*4)+(c*2)+(d);
+}
 int main()
 {
-	vector<int> val(7,0), arr(12,0), ham(12,0);
-	for(int i=0 ; i<7 ; i++)
-		cin>>val[i];
-		
-	for(int i=1 ; i<12 ; i++)
-		cin>>arr[i];
-	
+	vector<int> value(7,0), rec(11,0), cod(11,0);
+	for(int i=0 ; i<7 ; i++){
+		cin>>value[i];
+	}
+	for(int i=0 ; i<11 ; i++){
+		cin>>rec[i];
+	}
+	reverse(value.begin(), value.end());
 	int ind=0;
-	for(int i=11 ; i>=1 ; i--){
-		if(i!=1 and i!=2 and i!=4 and i!=8){
-			ham[i]=val[ind];
+	for(int i=0 ; i<11 ; i++){
+		if(i!=0 and i!=1 and i!=3 and i!=7){
+			cod[i]=value[ind];
 			ind++;
 		}
 	}
-	int r1 = ham[3]+ham[5]+ham[7]+ham[9]+ham[11];
-	ham[1] = r1%2==0? 0 : 1;
 	
-	int r2 = ham[3]+ham[6]+ham[7]+ham[10]+ham[11];
-	ham[2] = r2%2==0? 0 : 1;
+	cod[0] = (cod[2]+cod[4]+cod[6]+cod[8]+cod[10])%2;
+	cod[1] = (cod[2]+cod[5]+cod[6]+cod[9]+cod[10])%2;
+	cod[3] = (cod[4]+cod[5]+cod[6])%2;
+	cod[7] = (cod[8]+cod[9]+cod[10])%2;
 	
-	int r3 = ham[7]+ham[6]+ham[5];
-	ham[4] = r3%2==0? 0 : 1;
+	reverse(rec.begin(), rec.end());
 	
-	int r4 = ham[9]+ham[10]+ham[11];
-	ham[8] = r4%2==0? 0 : 1;
+	int r1 = (rec[0]+rec[2]+rec[4]+rec[6]+rec[8]+rec[10])%2;
+	int r2 = (rec[1]+rec[2]+rec[5]+rec[6]+rec[9]+rec[10])%2;
+	int r3 = (rec[3]+rec[4]+rec[5]+rec[6])%2;
+	int r4 = (rec[7]+rec[8]+rec[9]+rec[10])%2;
 	
-	bool set = true;
-	int pos=-1;
-	for(int i=1 ; i<12 ; i++){
-		if(ham[i]!=arr[i]){
-			set = false;
-			pos = i;
-			break;
-		}
-	}
-	set? cout<<"no error" : cout<<pos;
-
+	int error = find(r4, r3, r2, r1);
+	
+	error? cout<<error: cout<<"no error";
 }
