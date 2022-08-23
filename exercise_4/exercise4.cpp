@@ -35,5 +35,9 @@ int main()
 	
 	int error = find(r4, r3, r2, r1);
 	
-	error? cout<<error: cout<<"no error";
+	if(error){
+		cout<<error;
+	}
+	else
+		cout<<"no error";
 }
