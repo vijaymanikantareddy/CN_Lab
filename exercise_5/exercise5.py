@@ -24,8 +24,14 @@ def divide(dividend, divisor):
     return temp
 
 
+
+#Main of the program.
 keys = ['1100000001111','11000000000000101','10001000000100001']
 
+print("Choose the CRC")
+print("1. CRC 12")
+print("2. CRC 16")
+print("3. CRC CCITT")
 n = int(input())
 send = input()
 rec = input()
