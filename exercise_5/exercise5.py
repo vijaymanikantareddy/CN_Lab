@@ -33,8 +33,8 @@ print("1. CRC 12")
 print("2. CRC 16")
 print("3. CRC CCITT")
 n = int(input())
-send = input()
-rec = input()
+send = input("enter Data Sent: ")
+rec = input("enter Data Received: ")
 key = keys[n - 1]
 
 #encoding sender side
