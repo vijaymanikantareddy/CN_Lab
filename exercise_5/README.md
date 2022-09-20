@@ -29,14 +29,14 @@ Key - 1101 [ Or generator polynomial x3 + x2 + 1]
 
 Sender Side:
 sender
-[https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational1.jpg]
+![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational1.jpg)
 
 Therefore, the remainder is 001 and hence the encoded 
 data sent is 100100001.
 
 Receiver Side:
 Code word received at the receiver side  100100001
-receiver y[https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational2.jpg]
+receiver y![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational2.jpg)
 
 Therefore, the remainder is all zeros. Hence, the data received has no error.
  
@@ -46,13 +46,13 @@ Data word to be sent - 100100
 Key - 1101
 
 Sender Side:
-sender[https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational1.jpg]
+sender![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational1.jpg)
 
 Therefore, the remainder is 001 and hence the code word sent is 100100001.
 
 Receiver Side
 Let there be an error in transmission media Code word received at the receiver side - 100000001
-receiver n[https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational4.jpg]
+receiver n![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/rational4.jpg)
 
 Since the remainder is not all zeroes, the error is detected at the receiver side.
 
